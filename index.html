@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Luis Cortes</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+    button {
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+  border: 5px solid #F13030;
+  border-radius: 50px;
+  color: #F13030;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  transition: background-color 0.2s cubic-bezier(0.2, 0.65, 0.2, 1), width 0.3s cubic-bezier(0.2, 0.65, 0.2, 1);
+}
+button:after {
+  content: "";
+  height: 0px;
+  width: 6px;
+  border-radius: 50px;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  transform-origin: center;
+  background-color: #fff;
+  visibility: hidden;
+}
+button:before {
+  content: "";
+  height: 0px;
+  width: 6px;
+  border-radius: 50px;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  transform-origin: center;
+  background-color: #fff;
+  visibility: hidden;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #F13030;
+  padding: 0;
+  width: 80px;
+  outline: none;
+  font-size: 18px;
+}
+button:hover:after {
+  height: 45px;
+  width: 6px;
+  visibility: visible;
+  animation: x-animate-left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25) normal 1 both;
+  animation-delay: 0.1s;
+}
+button:hover:before {
+  height: 45px;
+  width: 6px;
+  visibility: visible;
+  animation: x-animate-right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25) normal 1 both;
+  animation-delay: 0.1s;
+}
+
+@keyframes x-animate-left {
+  0% {
+    transform: rotate(0deg) scaleY(0);
+  }
+  50% {
+    transform: rotate(0deg) scaleY(1);
+  }
+  100% {
+    transform: rotate(45deg) scaleY(1);
+  }
+}
+@keyframes x-animate-right {
+  0% {
+    transform: rotate(0deg) scaleY(0);
+  }
+  50% {
+    transform: rotate(0deg) scaleY(1);
+  }
+  100% {
+    transform: rotate(-45deg) scaleY(1);
+  }
+}
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav id="main-menu" class="menu">
+            <div class="menu-branding">
+                <div class="photo"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item"><a class="nav-link current" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">My work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
+        <div class="container">
+          <div class="container-title">
+            <h1 class="title">Luis <span>Cortes</span></h1>
+          </div>
+          <div class="presentation">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nisi itaque! Quod, exercitationem! Quas accusantium, reprehenderit consequatur minus facere quos consectetur recusandae aliquam modi pariatur aspernatur quis temporibus? At, ea?</p>
+          </div>
+          <div class="social-networks">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+          </div>
+          <button>Hire me</button>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+<button><b>Hover Me</b></button>
+
+button {
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    border: 5px solid #F13030;
+    border-radius: 50px;
+    color: #F13030;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    transition: background-color .2s cubic-bezier(.20,.65,.20,1), width .3s cubic-bezier(.20,.65,.20,1);
+    &:after {
+      content: '';
+      height: 0px;
+      width: 6px;
+      border-radius: 50px;
+      position: absolute;
+      top: 20%;
+      left: 45%;
+      transform-o<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"in: center;
+      background-    crossorigin="anonymous">or: #fff;
+      visibility: hidden;
+      
+    }
+    &:before {
+      content: '';
+      height: 0px;
+      width: 6px;
+      border-radius: 50px;
+      position: absolute;
+      top: 20%;
+      left: 45%;
+      transform-origin: center;
+      background-color: #fff;
+      visibility: hidden;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #F13030;
+      padding: 0;
+      width: 80px;
+      outline: none;
+      font-size: 18px;
+       &:after {
+        height: 45px;
+        width: 6px;
+        visibility: visible;
+        animation: x-animate-left .5s cubic-bezier(0.175, 0.885, 0.32, 1.25) normal 1 both;
+        animation-delay: .1s;
+      }
+        &:before {
+        height: 45px;
+        width: 6px;
+        visibility: visible;
+        animation: x-animate-right .5s cubic-bezier(0.175, 0.885, 0.32, 1.25) normal 1 both;
+        animation-delay: .1s;
+      }
+    }
+  }
+  
+  @keyframes x-animate-left {
+    0% {
+      transform: rotate(0deg) scaleY(0);
+    }
+    50% {
+      transform: rotate(0deg) scaleY(1);
+    }
+    100% {
+      transform: rotate(45deg) scaleY(1);
+    }
+  }
+  
+  @keyframes x-animate-right {
+    0% {
+      transform: rotate(0deg) scaleY(0);
+    }
+    50% {
+      transform: rotate(0deg) scaleY(1);
+    }
+    100% {
+      transform: rotate(-45deg) scaleY(1);
+    }
+  }
+  
+  
+  body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  } */ -->
