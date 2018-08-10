@@ -5,6 +5,13 @@
 #FFFFFF
 */
 
+/* 
+fonts family 
+itim 
+ubuntu
+
+*/
+
 *{
     box-sizing: border-box;
 }
@@ -16,8 +23,13 @@ body{
     height: 100vh;
     color: #fff;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: sans-serif;
-    line-height: 1.5;
+    /* font-family: sans-serif; */
+    /* font-family: 'Itim', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+     font-family: 'Caveat', cursive; /*NICE */
+    /* font-family: 'Bitter', serif; */
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 16px;
 }
 
 header{
@@ -87,10 +99,7 @@ header{
     transform: translate(0, 100%);
     transition: all 0.5s ease-out; 
 }
-.menu-branding.show{
-    transform: translate(0,0)
-}
-.menu-nav.show{
+.menu-branding.show,.menu-nav.show{
     transform: translate(0,0)
 }
 
@@ -123,36 +132,85 @@ header{
     overflow: hidden;
 }
 .container-title{
+    margin: 200px 0 0;
     margin-top: 200px;
     text-align: center;
 }
 
 .container-title .title{
-    font-size: 6rem;
+    margin: 0;
+    font-size: 150px;
     font-weight: 400;
 }
 
 .container-title .title span{
-    font-size: 4rem;
-    margin-left: -30px;
+    margin-left: -20px;
     font-weight: 300;
     color: #EECE1A;
 }
-.container .presentation{
-    width: 500px;
-    height: 200px;
-    border: 1px solid #fff;
+.container-title .presentation{
+    text-align: center;
+    font-family: sans-serif;
+    /* margin: 0; */
+    margin-top: -20px;
+    font-size: 1.3em;
 }
 
 
 
+.container .technology{
+    margin-top: 5vh;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer .tech{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.technology img:nth-child(3){
+    position: relative;
+    top: -5px;
+}
+.technology img:nth-child(4){
+    position: relative;
+    top: -10px;
+}
 
+.footer .social-networks{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 2em;
+    width: 26vw;
+    text-align: center;
+    margin: 15vh 0 0;
+}
+.footer .social-networks .icon{
+    margin: 0 5px;
+}
+.footer .social-networks .icon:hover{
+    animation: animationIcon 1000ms ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
 
+.footer .about-me{
+    text-align: center;
+    width: 26.66vw;
+}
 
-
-
-
+.footer .about-me p{
+    font-family: sans-serif;
+}
 .bg-1, .bg-2{
     width: 100vw;
     position: fixed;
@@ -160,7 +218,8 @@ header{
     z-index: -1;
 }
 .bg-1{
-    background: linear-gradient(45deg, #08D961 33vw, transparent 33vw);
+    /* background: linear-gradient(45deg, #08D961 33vw, transparent 33vw); */
+    background: linear-gradient(45deg, rgb(30, 248, 125) 33vw, transparent 33vw);
 }
 .bg-2{
     background: linear-gradient(-45deg, #231F20 33vw, transparent 33vw);
@@ -178,14 +237,78 @@ header{
 
 
 
-/* background: linear-gradient(40deg, #08D961 35%,#2E2A2B 35%,#2E2A2B 70%); */
+
+
+
+/* 
 
 
 
 
 
 
+@keyframes animationIcon{
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    5%{
+        transform: scale(1.1);
+    }
+    10%{
+        transform: scale(1.2);
+    }
+    15%{
+        transform: scale(1.3);
+    }
+    20%{
+        transform: scale(1.4);
+    }
+    25%{
+        transform: scale(1.3) rotate(-25deg);
+    }
+    30%{
+        transform: scale(1.2) rotate(25deg);
+    }
+    35%{
+        transform: scale(1.1) rotate(-25deg);
+    }
+    40%{
+        transform: scale(1) rotate(0deg);
+    }
+    50%{
+        transform: scale(1.1) rotate(25deg);
+    }
+    60%{
+        transform: scale(1.2) rotate(-25deg);
+    }
+    70%{
+        transform: scale(1.1) rotate(25deg);
+    }
+    80%{
+        transform: scale(1.05) rotate(-25deg);
+    }
+    100%{
+        transform: scale(1) rotate(25deg);
+    }
+} */
 
 
 
 
+
+@keyframes animationIcon{
+    0%{transform: scale(1) rotate(0deg);}
+    5%{transform: scale(1.1);}
+    10%{transform: scale(1.2);}
+    15%{transform: scale(1.3);}
+    20%{transform: scale(1.4);}
+    25%{transform: scale(1.3) rotate(-20deg);}
+    30%{transform: scale(1.2) rotate(20deg);}
+    35%{transform: scale(1.1) rotate(-20deg);}
+    40%{transform: scale(1) rotate(0deg);}
+    50%{transform: scale(1) rotate(20deg);}
+    60%{transform: scale(1) rotate(-20deg);}
+    70%{transform: scale(1.1) }
+    80%{transform: scale(1.2) }
+    100%{transform: scale(1.3) }
+}
