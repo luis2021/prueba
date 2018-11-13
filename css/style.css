@@ -125,6 +125,34 @@ header{
     color: rgb(255, 208, 0);
 }
 
+.sn-menu{
+    height: 100vh;
+    width: 6vw;
+    background: #fff;
+    position: fixed;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 1px 1px #000;
+}
+
+.sn-menu .social-networks{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 2em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    position: relative;
+    top: 70vh;
+}
+.sn-menu .social-networks .icon{
+    margin: 8px auto;
+}
+.sn-menu .social-networks .icon:hover{
+    animation: animationIcon 1000ms ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
 .container{
     margin: 0 auto;
     width: 80vw;
@@ -187,21 +215,6 @@ header{
     top: -10px;
 }
 
-.footer .social-networks{
-    color: rgba(0, 0, 0, 0.9);
-    font-size: 2em;
-    width: 26vw;
-    text-align: center;
-    margin: 15vh 0 0;
-}
-.footer .social-networks .icon{
-    margin: 0 5px;
-}
-.footer .social-networks .icon:hover{
-    animation: animationIcon 1000ms ease-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
 
 .footer .about-me{
     text-align: center;
