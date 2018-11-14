@@ -144,7 +144,7 @@ main{
     flex-direction: column;
     align-content: flex-start;
     position: relative;
-    top: 70vh;
+    top: 60vh;
 }
 .sn-menu .social-networks .icon{
     margin: 8px auto;
