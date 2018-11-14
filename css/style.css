@@ -130,8 +130,7 @@ header{
     width: 6vw;
     background: #fff;
     position: fixed;
-    border-radius: 0 5px 5px 0;
-    box-shadow: 1px 1px #000;
+    box-shadow: 1px 0px 10px #000;
 }
 
 .sn-menu .social-networks{
@@ -199,6 +198,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 150px;
 }
 .footer .tech{
     height: 400px;
