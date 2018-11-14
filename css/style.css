@@ -124,7 +124,9 @@ header{
 .menu-nav .nav-link.current, .menu-nav .nav-link:hover{
     color: rgb(255, 208, 0);
 }
-
+main{
+    position: relative;
+}
 .sn-menu{
     height: 100vh;
     width: 6vw;
@@ -196,24 +198,14 @@ header{
 .footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
-    margin-top: 150px;
+    margin-top: 170px;
 }
-.footer .tech{
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.footer .button-container{
+    margin: 10px 45px;
 }
-.technology img:nth-child(3){
-    position: relative;
-    top: -5px;
-}
-.technology img:nth-child(4){
-    position: relative;
-    top: -10px;
-}
+
 
 
 .footer .about-me{
@@ -225,18 +217,20 @@ header{
     font-family: sans-serif;
 }
 .bg-1, .bg-2{
-    width: 100vw;
-    position: fixed;
+    width: 94vw;
+    position: absolute;
     height: 100vh;
     z-index: -1;
 }
 .bg-1{
     /* background: linear-gradient(45deg, #08D961 33vw, transparent 33vw); */
+    left: 6vw;
     background: linear-gradient(45deg, rgb(30, 248, 125) 33vw, transparent 33vw);
 }
 .bg-2{
     background: linear-gradient(-45deg, #231F20 33vw, transparent 33vw);
     opacity: 0.8;
+    right: 0px;
 }
 
 
