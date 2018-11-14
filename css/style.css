@@ -134,6 +134,19 @@ main{
     position: fixed;
     box-shadow: 1px 0px 10px #000;
 }
+.logo-container{
+  color: #000;
+  padding: 0;
+  margin: 3vh 0 0 0;
+}
+.logo-container img{
+  width: 6vw;
+}
+.logo-container figcaption{
+  margin: -10px 0 0 1.5vw;
+  font-size: 2em;
+  font-weight: bold;
+}
 
 .sn-menu .social-networks{
     color: rgba(0, 0, 0, 0.9);
@@ -144,7 +157,7 @@ main{
     flex-direction: column;
     align-content: flex-start;
     position: relative;
-    top: 60vh;
+    top: 55vh;
 }
 .sn-menu .social-networks .icon{
     margin: 8px auto;
