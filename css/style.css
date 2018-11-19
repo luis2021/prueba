@@ -14,6 +14,8 @@ ubuntu
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     /* background: linear-gradient(-45deg, #08D961 35%,#2E2A2B 30%,#2E2A2B 70%, #fff 70%); */
@@ -76,7 +78,7 @@ header{
 }
 
 .menu-branding, .menu-nav{
-    width: 50vw;
+    width: calc(50vw - var(--scrollbar));
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -131,7 +133,7 @@ main{
     height: 100vh;
     width: 6vw;
     background: #fff;
-    position: fixed;
+    position: absolute;
     box-shadow: 1px 0px 10px #000;
 }
 .logo-container{
@@ -198,16 +200,6 @@ main{
     font-size: 1.3em;
 }
 
-
-
-.container .technology{
-    margin-top: 5vh;
-    width: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .footer{
     display: flex;
     flex-direction: row;
@@ -230,7 +222,7 @@ main{
     font-family: sans-serif;
 }
 .bg-1, .bg-2{
-    width: 94vw;
+    width: calc(94vw - var(--scrollbar));
     position: absolute;
     height: 100vh;
     z-index: -1;
@@ -246,9 +238,7 @@ main{
     right: 0px;
 }
 
-.projects{
-    height: 100vh;
-}
+
 
 
 
