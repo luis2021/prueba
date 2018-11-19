@@ -78,7 +78,7 @@ header{
 }
 
 .menu-branding, .menu-nav{
-    width: calc(50vw - var(--scrollbar));
+    width: calc(50.5vw - var(--scrollbar));
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -238,7 +238,10 @@ main{
     right: 0px;
 }
 
+.projects{
+    height: 100vh;
 
+}
 
 
 
