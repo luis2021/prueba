@@ -309,10 +309,10 @@ main{
     background: transparent;
     border: none;
     border-radius: 100px;
-    -webkit-box-shadow: inset 0px 0px 0px 4px #191919;
-    -moz-box-shadow: inset 0px 0px 0px 4px #191919;
-    box-shadow: inset 0px 0px 0px 4px #191919;
-    color: #191919;
+    -webkit-box-shadow: inset 0px 0px 0px 4px #DE4D3C;
+    -moz-box-shadow: inset 0px 0px 0px 4px #DE4D3C;
+    box-shadow: inset 0px 0px 0px 4px #DE4D3C;
+    color: #DE4D3C;
     transition-timing-function: ease-in-out;
     transition: 0.3s all;
     transform: scale(1) rotateX(0) rotateY(0);
@@ -321,9 +321,9 @@ main{
 }
 .btn:hover {
     color: #fff;
-    -webkit-box-shadow: inset 0px 0px 0px 30px #191919, 0px 10px 35px #191919 ;
-    -moz-box-shadow: inset 0px 0px 0px 30px #191919, 0px 10px 35px #191919 ;
-    box-shadow: inset 0px 0px 0px 30px #191919, 0px 10px 35px #191919 ;
+    -webkit-box-shadow: inset 0px 0px 0px 30px #DE4D3C, 0px 10px 35px #DE4D3C ;
+    -moz-box-shadow: inset 0px 0px 0px 30px #DE4D3C, 0px 10px 35px #DE4D3C ;
+    box-shadow: inset 0px 0px 0px 30px #DE4D3C, 0px 10px 35px #DE4D3C ;
 }
 
 /*  ------------------------------------------------------------------------------------------------------------ */
