@@ -291,93 +291,36 @@ main{
 
 /*  ------------------------------------------------------------------------------------------------------------ */
 
-button {
-  width: 200px;
-  height: 80px;
-  text-align: center;
-  position: relative;
-  background-color: transparent;
-  border: 5px solid #DE4D3C;
-  border-radius: 50px;
-  color: #DE4D3C;
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  transition: background-color 0.2s cubic-bezier(0.2, 0.65, 0.2, 1), width 0.3s cubic-bezier(0.2, 0.65, 0.2, 1);
-  margin: 0 auto;
+.container{
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    perspective: 400px;
 }
-button:after {
-  content: "";
-  height: 0px;
-  width: 6px;
-  border-radius: 50px;
-  position: absolute;
-  top: 20%;
-  left: 45%;
-  transform-origin: center;
-  background-color: #DE4D3C;
-  visibility: hidden;
+.btn{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    padding: 9px 30px;
+    font-weight:900;
+    text-transform:uppercase;
+    background:transparent;
+    border:none;
+    border-radius: 100px;
+    -webkit-box-shadow: inset 0px 0px 0px 4px rgba(0,0,0, 0.3);
+    -moz-box-shadow: inset 0px 0px 0px 4px rgba(0,0,0, 0.3);
+    box-shadow: inset 0px 0px 0px 4px rgba(0,0,0, 0.3);
+    color:rgba(0,0,0, 0.3);
+    transition-timing-function:ease-in-out;
+    transition:0.3s all;
+    transform:scale(1.0) rotateX(0) rotateY(0);
+    transform-style: preserve-3d;
+    will-change: transform box-shadow;
+}  
+btn:hover{
+    color:#fff;
+    box-shadow: inset 0px 0px 0px 20px rgba(25,25,25, 1), 0px 10px 35px rgba(0,0,0,0.4);
 }
-button:before {
-  content: "";
-  height: 0px;
-  width: 6px;
-  border-radius: 50px;
-  position: absolute;
-  top: 20%;
-  left: 45%;
-  transform-origin: center;
-  background-color: #DE4D3C;
-  visibility: hidden;
-}
-button:hover {
-  cursor: pointer;
-  background-color: #231F20;
-  padding: 0;
-  width: 80px;
-  outline: none;
-  font-size: 18px;
-}
-button:hover:after {
-  height: 45px;
-  width: 6px;
-  visibility: visible;
-  animation: x-animate-left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25) normal 1 both;
-  animation-delay: 0.1s;
-}
-button:hover:before {
-  height: 45px;
-  width: 6px;
-  visibility: visible;
-  animation: x-animate-right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25) normal 1 both;
-  animation-delay: 0.1s;
-}
-
-@keyframes x-animate-left {
-  0% {
-    transform: rotate(0deg) scaleY(0);
-  }
-  50% {
-    transform: rotate(0deg) scaleY(1);
-  }
-  100% {
-    transform: rotate(45deg) scaleY(1);
-  }
-}
-@keyframes x-animate-right {
-  0% {
-    transform: rotate(0deg) scaleY(0);
-  }
-  50% {
-    transform: rotate(0deg) scaleY(1);
-  }
-  100% {
-    transform: rotate(-45deg) scaleY(1);
-  }
-}
-
-
-
-
 
 /*  ------------------------------------------------------------------------------------------------------------ */
 /* <div class="container">
