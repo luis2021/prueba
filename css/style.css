@@ -159,6 +159,15 @@ main{
   font-size: 2em;
   font-weight: bold;
 }
+.sn-menu .pagination{
+    display: flex;
+    flex-direction: column;
+    margin: 23vh 2.2vw 20vh;
+    color: #000;
+}
+.sn-menu .pagination .fa-circle{
+    margin: 5px 0;
+}
 
 .sn-menu .social-networks{
     color: rgba(0, 0, 0, 0.9);
@@ -169,7 +178,6 @@ main{
     flex-direction: column;
     align-content: flex-start;
     position: relative;
-    top: 55vh;
 }
 .sn-menu .social-networks .icon{
     margin: 8px auto;
