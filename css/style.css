@@ -181,7 +181,7 @@ main{
 }
 .container{
     margin: 0 auto;
-    width: 80vw;
+    width: 90vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -205,7 +205,6 @@ main{
 .container-title .presentation{
     text-align: center;
     font-family: sans-serif;
-    /* margin: 0; */
     margin-top: -20px;
     font-size: 1.3em;
 }
@@ -214,16 +213,15 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-start;
     margin-top: 170px;
 }
 .footer .button-container{
-    margin: 10px 45px;
+    margin: 10px 8vw;
 }
 
 .footer .about-me{
     text-align: center;
-    width: 26.66vw;
+    width: 28vw;
 }
 
 .footer .about-me p{
