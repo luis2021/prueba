@@ -4,7 +4,17 @@ const menuBtn = document.querySelector('div.menu-btn');
 const menuBranding = document.querySelector('.menu .menu-branding');
 const menuNav = document.querySelector('.menu .menu-nav');
 const mainMenu = document.querySelector('header #main-menu');
-const icons = document.querySelectorAll(".pagination .far");
+const icons = document.querySelectorAll(".pagination .fa-circle");
+
+// Estilos
+
+// transicion en la paginacion 
+icons[0].className = 'fas fa-circle';
+icons[0].style.position = 'absolute';
+icons[0].style.fontSize = "16px";
+icons[0].style.color = 'rgba(0,0,0, 1)';
+
+console.log(`var ${icons[1]}`)
 
 // animaciones y eventos para el boton de menu 
 menuBtn.addEventListener('click', ()=>{
@@ -14,9 +24,6 @@ menuBtn.addEventListener('click', ()=>{
     mainMenu.classList.toggle('show');
 });
 
-// transicion en la paginacion 
-icons[0].className = 'fas fa-circle';
-icons[0].style.color = '#DE4D3C'
 
 
 
@@ -49,7 +56,7 @@ btn.addEventListener('mouseout', () => {
 const getScrollBarWidth = () => window.innerWidth - document.documentElement.getBoundingClientRect().width;
 // asignar ese valor a una variable css
 const cssScrollBarWidth = function(){
-    console.log("es: ",getScrollBarWidth());
+    console.log("es : ",getScrollBarWidth());
     document.documentElement.style.setProperty('--scrollbar',`${getScrollBarWidth()}px` );
 }
 window.addEventListener('load', cssScrollBarWidth);
