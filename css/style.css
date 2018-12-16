@@ -15,6 +15,7 @@ ubuntu
     padding: 0;
 }
 body{
+    overflow-y: scroll;
     /* background: linear-gradient(-45deg, #08D961 35%,#2E2A2B 30%,#2E2A2B 70%, #fff 70%); */
     background: #2E2A2B;
     margin: 0;
@@ -25,10 +26,13 @@ body{
     /* font-family: sans-serif; */
     /* font-family: 'Itim', cursive; */
     /* font-family: 'Ubuntu', sans-serif; */
-     font-family: 'Caveat', cursive; /*NICE */
+    font-family: 'Caveat', cursive; /*NICE */
     /* font-family: 'Bitter', serif; */
     /* font-family: 'Playfair Display', serif; */
     font-size: 16px;
+}
+html{
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
     width: 8px;
@@ -39,9 +43,13 @@ body{
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
 }
 ::-webkit-scrollbar-track{
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+}
+
+footer, .menu-branding, .menu-nav, .sn-menu, section{
+    height: 100vh;
 }
 
 header{
@@ -89,7 +97,6 @@ header{
 
 .menu-branding, .menu-nav{
     width: calc(50.2vw - var(--scrollbar));
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,11 +147,13 @@ main{
     position: relative;
 }
 .sn-menu{
-    height: 100vh;
     width: 6vw;
     background: #fff;
     position: absolute;
     box-shadow: 1px 0px 10px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .logo-container{
   color: #000;
@@ -160,14 +169,15 @@ main{
   font-weight: bold;
 }
 .sn-menu .pagination{
-    position: relative;
+    position: fixed; 
     display: flex;
     flex-direction: column;
-    margin: 23vh 2.2vw 20vh;
-    color: #000;
+    margin: 40vh 2.2vw;
+    color: #fff;
 }
 .sn-menu .pagination .fa-circle{
-    margin: 5px 0;
+    position: absolute;
+    color: rgba(0,0,0, .85);
     font-size: 16px;
 }
 
@@ -175,11 +185,11 @@ main{
     color: rgba(0, 0, 0, 0.9);
     font-size: 2em;
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     position: relative;
+    padding-bottom: 1.5vh;
 }
 .sn-menu .social-networks .icon{
     margin: 8px auto;
@@ -219,22 +229,22 @@ main{
     font-size: 1.3em;
 }
 
-.footer{
+.contact-information{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 170px;
 }
-.footer .button-container{
+.contact-information .button-container{
     margin: 10px 8vw;
 }
 
-.footer .about-me{
+.contact-information .about-me{
     text-align: center;
     width: 28vw;
 }
 
-.footer .about-me p{
+.contact-information .about-me p{
     font-family: sans-serif;
 }
 .bg-1, .bg-2{
@@ -254,15 +264,11 @@ main{
     right: 0px;
 }
 
-.projects{
-    height: 100vh;
-
-}
 @keyframes animationIcon{
     0%{transform: scale(1) rotate(0deg);}
-    5%{transform: scale(1.1);}
-    10%{transform: scale(1.2);}
-    15%{transform: scale(1.3);}
+    5%, 70%{transform: scale(1.1);}
+    10%, 80%{transform: scale(1.2);}
+    15%, 100%{transform: scale(1.3);}
     20%{transform: scale(1.4);}
     25%{transform: scale(1.3) rotate(-20deg);}
     30%{transform: scale(1.2) rotate(20deg);}
@@ -270,9 +276,6 @@ main{
     40%{transform: scale(1) rotate(0deg);}
     50%{transform: scale(1) rotate(20deg);}
     60%{transform: scale(1) rotate(-20deg);}
-    70%{transform: scale(1.1) }
-    80%{transform: scale(1.2) }
-    100%{transform: scale(1.3) }
 }
 
 /* boton animaciones y estilos */
@@ -310,3 +313,17 @@ main{
     -moz-box-shadow: inset 0px 0px 0px 40px #DE4D3C, 0px 6px 15px #000 ;
     box-shadow: inset 0px 0px 0px 40px #DE4D3C, 0px 6px 15px #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
