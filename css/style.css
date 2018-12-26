@@ -319,9 +319,22 @@ main{
 
 
 
+/*  -------------------------------------------------------SKILLS--------------------------------------------------- */
+.my-skills, .projects, .footer{
+    text-align: center;
+    /*background-image: url("./hero-front.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;*/
+    background: url('../img/texturas/asfalt-dark.png');
+    background-attachment: fixed;
+}
 
-
-
+.subtitle{
+    font-size: 3em;
+    font-weight: 300;
+    margin-top: 50px;
+}
 
 
 
