@@ -7,7 +7,8 @@ const mainMenu = document.querySelector('header #main-menu');
 const icons = document.querySelectorAll(".pagination .fa-circle");
 const currentIndicator = document.querySelector(".pagination a"); //indicador de la pag actual
 const i = document.querySelectorAll('.pagination a')
-const btn = document.querySelector('.btn');
+const btn = document.querySelector('.button-container .btn');
+const hearts = document.querySelectorAll('.heart');
 let lastScroll = 0;
 let lastIcon=0; 
     
@@ -28,12 +29,20 @@ for(let i=0; i<icons.length; i++){
     }
 }
 
+hearts.forEach( (heart)=>{
+    heart.addEventListener('click', e=>{
+        e.target.classList.toggle('is-like');
+    });
+    // para agregar el event al texto de like
+    heart.nextElementSibling.addEventListener('click', e=>{
+        e.target.previousElementSibling.classList.toggle('is-like');
+    }); 
+});
 
 // Eventos 
 
 // animacion de la paginacion
 window.addEventListener('scroll', (e)=>{
-    console.log(e)
     changeIndicator(); // todo depende si se sube o se baja
 });
 
@@ -64,21 +73,17 @@ function changeIndicator(){
     if(scrollTop > lastScroll){
         // pasamos a la pagina 4 
         if(window.scrollY >= 3*window.innerHeight){
-            console.log(`pagina: 4`)
             paginationAnimation(50,75,3);
         }
         // pasamos a la pagina 3 
         else if(window.scrollY >= 2*window.innerHeight){
-            console.log(`pagina: 3`)
             paginationAnimation(25,50, 2);
         }
         // pasamos a la pagina 2 
         else if(window.scrollY >= window.innerHeight){
-            console.log(`pagina: 2`)
             paginationAnimation(0,25, 1);
         }
         else if(window.scrollY < window.innerHeight){ 
-            console.log(`pagina: 1`)
             paginationAnimation(0,0,0);
         }
     }
