@@ -172,3 +172,9 @@ function setVarcssScrollBarWidth(){
     getScrollBarWidth = window.innerWidth - document.documentElement.getBoundingClientRect().width;
     document.documentElement.style.setProperty('--scrollbar',`${getScrollBarWidth}px` );
 }
+
+
+
+
+
+console.log("work!!!");
