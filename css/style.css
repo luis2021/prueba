@@ -15,7 +15,6 @@ ubuntu
     padding: 0;
 }
 body{
-    overflow-y: scroll;
     /* background: linear-gradient(-45deg, #08D961 35%,#2E2A2B 30%,#2E2A2B 70%, #fff 70%); */
     background: #2E2A2B;
     margin: 0;
@@ -33,6 +32,7 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar{
     width: 8px;
 }
@@ -415,11 +415,9 @@ main{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 0px;
     transform: translateY(-25%);
-    /*margin-top: -10px;*/
-    /*height: 50px;*/
 }
 .card-body .row .heart{
     width: 100px;
