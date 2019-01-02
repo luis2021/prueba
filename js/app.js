@@ -68,7 +68,6 @@ window.addEventListener('load', setVarcssScrollBarWidth);
 
 function changeIndicator(){
     let scrollTop = window.scrollY;
-
     // Si se hace scroll hacia abajo
     if(scrollTop > lastScroll){
         // pasamos a la pagina 4 
@@ -111,8 +110,8 @@ function changeIndicator(){
 
 
 // animacion de la pagincion
-function  paginationAnimation(inicialPosition, finalPosition, currentIicon){
-    if(lastIcon == currentIicon){
+function  paginationAnimation(inicialPosition, finalPosition, currentIcon){
+    if(lastIcon == currentIcon){
         // no se hace la animacion
     }
     else{
@@ -125,8 +124,8 @@ function  paginationAnimation(inicialPosition, finalPosition, currentIicon){
             easing: "ease-in-out",
             
         });
-        lastIcon = currentIicon;
-        changeNavMenu(currentIicon);
+        lastIcon = currentIcon;
+        changeNavMenu(currentIcon);
     }
 }
 
